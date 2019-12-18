@@ -1,0 +1,36 @@
+=== Comparing Concerto performance predictions to actual time ===
+
+Min: we take the maximum time difference between theory and practice and see how much it represents compared to the instance with the minmium eecution time
+Average: we take the maximum time difference between theory and practice and see how much it represents compared to an instance of average eecution time
+
+Deploy_deps:
+Number of elements: 750
+Maximum distance: 0.050941s
+Maximum distance percentage: 5.672503% (exec time: 0.373959s)
+Max to Min:       0.373959s = 13.622007%
+Max to Average:   13.669511s = 0.372659%
+Median execution time: 14.509810s
+
+Update_no_server:
+Number of elements: 750
+Maximum distance: 0.037991s
+Maximum distance percentage: 2.465413% (exec time: 0.668144s)
+Max to Min:       0.668144s = 5.686118%
+Max to Average:   13.849176s = 0.274323%
+Median execution time: 14.781056s
+
+Deploy_server:
+Number of elements: 750
+Maximum distance: 0.052433s
+Maximum distance percentage: 2.454743% (exec time: 0.902823s)
+Max to Min:       0.902823s = 5.807712%
+Max to Average:   17.222199s = 0.304452%
+Median execution time: 17.312560s
+
+Update_with_server:
+Number of elements: 750
+Maximum distance: 0.052215s
+Maximum distance percentage: 0.488376% (exec time: 5.570293s)
+Max to Min:       5.570293s = 0.937380%
+Max to Average:   21.141076s = 0.246983%
+Median execution time: 21.686769s

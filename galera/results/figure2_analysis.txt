@@ -1,0 +1,32 @@
+====== Number of nodes added: 1 ======
+Ansible      : 29.514402
+Aeolus       : 28.860424
+  gain to Ansible: 0.653979 (2.215796%)
+Concerto     : 27.912043
+  gain to Ansible: 1.602359 (5.429076%)
+  gain to Aeolus : 0.948381 (3.286094%)
+
+====== Number of nodes added: 5 ======
+Ansible      : 36.463901
+Aeolus       : 31.851511
+  gain to Ansible: 4.612390 (12.649195%)
+Concerto     : 31.455837
+  gain to Ansible: 5.008064 (13.734306%)
+  gain to Aeolus : 0.395674 (1.242245%)
+
+====== Number of nodes added: 10 ======
+Ansible      : 39.529990
+Aeolus       : 35.100046
+  gain to Ansible: 4.429944 (11.206539%)
+Concerto     : 35.325491
+  gain to Ansible: 4.204500 (10.636228%)
+  gain to Aeolus : -0.225444 (-0.642290%)
+
+====== Number of nodes added: 20 ======
+Ansible      : 50.225753
+Aeolus       : 50.058711
+  gain to Ansible: 0.167042 (0.332581%)
+Concerto     : 47.400017
+  gain to Ansible: 2.825736 (5.626069%)
+  gain to Aeolus : 2.658694 (5.311152%)
+
