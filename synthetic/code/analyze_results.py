@@ -6,7 +6,7 @@ from copy import deepcopy
 with open(argv[1]) as f:
     results = load(f)
 
-def analysis(experiment):
+def analysis(experiment, filter_nb_deps=None):
     def theory_time(trial):
         return trial["theory"]["concerto"][experiment]
     def real_time(trial):
@@ -25,6 +25,11 @@ def analysis(experiment):
         
     
     trials = deepcopy(results)
+    if filter_nb_deps is not None:
+        trials = list(filter(lambda t: nb_deps(t) == filter_nb_deps, trials))
+    if not trials:
+        print("Warning: no data points for experiment '%s' with filter_nb_deps=%d" % (experiment, filter_nb_deps))
+        return
     minimum = min([theory_time(x) for x in trials])
     average = mean([theory_time(x) for x in trials])
     maximum_distance = max([distance(x) for x in trials])
@@ -45,19 +50,29 @@ print("=== Comparing Concerto performance predictions to actual time ===")
 print()
 print("Min: we take the maximum time difference between theory and practice and see how much it represents compared to the instance with the minmium eecution time")
 print("Average: we take the maximum time difference between theory and practice and see how much it represents compared to an instance of average eecution time")
+print()
+
+def full_analysis(experiment, label):
+    print("%s:" % label)
+    analysis(experiment)
+    print()
+
+full_analysis("deploy_deps", "Deploy_deps")
+full_analysis("update_no_server", "Update_no_server")
+full_analysis("deploy_server", "Deploy_server")
+full_analysis("update_with_server", "Update_with_server")
 
 print()
-print("Deploy_deps:")
-analysis("deploy_deps")
-
+print("Split by number of dependencies:")
 print()
-print("Update_no_server:")
-analysis("update_no_server")
 
-print()
-print("Deploy_server:")
-analysis("deploy_server")
+def split_analysis(experiment, label):
+    for nb_deps in [1, 5, 10]:
+        print("%s (%d):" % (label, nb_deps))
+        analysis(experiment, nb_deps)
+        print()
 
-print()
-print("Update_with_server:")
-analysis("update_with_server")
+split_analysis("deploy_deps", "Deploy_deps")
+split_analysis("update_no_server", "Update_no_server")
+split_analysis("deploy_server", "Deploy_server")
+split_analysis("update_with_server", "Update_with_server")

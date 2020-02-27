@@ -34,3 +34,103 @@ Maximum distance percentage: 0.488376% (exec time: 5.570293s)
 Max to Min:       5.570293s = 0.937380%
 Max to Average:   21.141076s = 0.246983%
 Median execution time: 21.686769s
+
+
+Split by number of dependencies:
+
+Deploy_deps (1):
+Number of elements: 250
+Maximum distance: 0.040474s
+Maximum distance percentage: 5.672503% (exec time: 0.373959s)
+Max to Min:       0.373959s = 10.823156%
+Max to Average:   10.152174s = 0.398675%
+Median execution time: 10.090688s
+
+Deploy_deps (5):
+Number of elements: 250
+Maximum distance: 0.041260s
+Maximum distance percentage: 0.374266% (exec time: 7.764171s)
+Max to Min:       7.764171s = 0.531416%
+Max to Average:   14.843337s = 0.277970%
+Median execution time: 15.011011s
+
+Deploy_deps (10):
+Number of elements: 250
+Maximum distance: 0.050941s
+Maximum distance percentage: 0.297438% (exec time: 10.944482s)
+Max to Min:       10.944482s = 0.465447%
+Max to Average:   16.013023s = 0.318121%
+Median execution time: 16.158467s
+
+Update_no_server (1):
+Number of elements: 250
+Maximum distance: 0.035615s
+Maximum distance percentage: 2.465413% (exec time: 0.668144s)
+Max to Min:       0.668144s = 5.330464%
+Max to Average:   10.348258s = 0.344166%
+Median execution time: 10.406472s
+
+Update_no_server (5):
+Number of elements: 250
+Maximum distance: 0.037955s
+Maximum distance percentage: 0.324913% (exec time: 7.273369s)
+Max to Min:       7.224345s = 0.525383%
+Max to Average:   14.839551s = 0.255773%
+Median execution time: 15.011010s
+
+Update_no_server (10):
+Number of elements: 250
+Maximum distance: 0.037991s
+Maximum distance percentage: 0.267347% (exec time: 10.461311s)
+Max to Min:       10.461311s = 0.363161%
+Max to Average:   16.359718s = 0.232226%
+Median execution time: 16.520342s
+
+Deploy_server (1):
+Number of elements: 250
+Maximum distance: 0.048308s
+Maximum distance percentage: 2.454743% (exec time: 0.902823s)
+Max to Min:       0.902823s = 5.350810%
+Max to Average:   14.584431s = 0.331232%
+Median execution time: 14.594694s
+
+Deploy_server (5):
+Number of elements: 250
+Maximum distance: 0.049758s
+Maximum distance percentage: 0.356391% (exec time: 8.489691s)
+Max to Min:       8.489691s = 0.586095%
+Max to Average:   17.951234s = 0.277182%
+Median execution time: 18.344976s
+
+Deploy_server (10):
+Number of elements: 250
+Maximum distance: 0.052433s
+Maximum distance percentage: 0.333756% (exec time: 9.636204s)
+Max to Min:       9.636204s = 0.544129%
+Max to Average:   19.130932s = 0.274077%
+Median execution time: 19.190850s
+
+Update_with_server (1):
+Number of elements: 250
+Maximum distance: 0.051009s
+Maximum distance percentage: 0.488376% (exec time: 5.570293s)
+Max to Min:       5.570293s = 0.915725%
+Max to Average:   17.493066s = 0.291593%
+Median execution time: 17.638275s
+
+Update_with_server (5):
+Number of elements: 250
+Maximum distance: 0.050544s
+Maximum distance percentage: 0.290133% (exec time: 11.566761s)
+Max to Min:       11.566761s = 0.436975%
+Max to Average:   22.041397s = 0.229313%
+Median execution time: 21.956440s
+
+Update_with_server (10):
+Number of elements: 250
+Maximum distance: 0.052215s
+Maximum distance percentage: 0.229463% (exec time: 16.804870s)
+Max to Min:       16.804870s = 0.310712%
+Max to Average:   23.888765s = 0.218575%
+Median execution time: 24.208489s
+
