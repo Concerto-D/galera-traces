@@ -27,5 +27,5 @@ g5k.run_ansible(["playbook.yaml"])
 end_time = time.perf_counter()
 
 print(json.dumps(host_times))
-print("Expected total time: %d" % expected_time_1+expected_time_2)
-print("Measured total time: %f" % end_time-start_time)
+print("Expected total time: %d" % (expected_time_1+expected_time_2))
+print("Measured total time: %f" % (end_time-start_time))
