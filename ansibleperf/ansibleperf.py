@@ -5,7 +5,7 @@ from random import randint
 
 
 g5k = G5kReservation("conf.yaml")
-hosts = [h["address"] for h in g5k.get_hosts_info()]
+hosts = [h["address"] for h in g5k.get_hosts_info("default")]
 
 host_times = dict()
 
