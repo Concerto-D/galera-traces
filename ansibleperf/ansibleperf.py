@@ -6,7 +6,7 @@ from random import randint
 from statistics import mean, median
 
 
-NB_ATTEMPTS = 100
+NB_ATTEMPTS = 10
 MIN_TIME = 0
 MAX_TIME = 10
 
@@ -49,6 +49,9 @@ results = {
     "max_overhead": max([run["overhead"] for run in log]),
     "mean_overhead": mean([run["overhead"] for run in log]),
     "median_overhead": median([run["overhead"] for run in log]),
+    "nb_attempts": NB_ATTEMPTS,
+    "min_sleep_time": MIN_TIME,
+    "max_sleep_time": MAX_TIME,
     "log": log
 }
 
