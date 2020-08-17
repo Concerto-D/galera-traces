@@ -6,7 +6,7 @@ from random import randint
 from statistics import mean, median
 
 
-NB_ATTEMPTS = 10
+NB_ATTEMPTS = 1500
 MIN_TIME = 0
 MAX_TIME = 10
 
