@@ -1,4 +1,5 @@
 import json
+import sys
 import time
 from reserve_g5k import G5kReservation
 from remote_host import RemoteHost
@@ -55,4 +56,8 @@ results = {
     "log": log
 }
 
-print(json.dumps(results, indent='\t'))
+if len(sys.argv) > 1:
+    with open(sys.argv[1], 'w') as outfile:
+        json.dump(results, outfile, indent='\t')
+else:
+    print(json.dumps(results, indent='\t'))
